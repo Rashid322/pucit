@@ -1,0 +1,36 @@
+{
+  "name": "auto-cancellation-running-action",
+  "version": "1.0.0",
+  "description": "Auto Cancellation allows you to only run builds for the latest commits in the queue. \n Reduce number of minutes usage of github action by killing all old actions running on the same branch and not finished.\n",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actions/javascript-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/actions/javascript-action/issues"
+  },
+  "homepage": "https://github.com/actions/javascript-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^4.0.0",
+    "is-empty": "^1.2.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1"
+  }
+}
